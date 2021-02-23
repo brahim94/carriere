@@ -1,0 +1,23 @@
+<odoo>
+  <data>
+    
+ <menuitem name="Carrière RH" 
+    id="menu_carriere_rh"
+    sequence="1" 
+    groups="base.group_user" 
+    web_icon="tech_carriere,static/description/icon.png"/>
+
+    <menuitem name="Notation" id="menu_notation_carriere" action="egov_rh_ma.action_hr_notes22"  parent="menu_carriere_rh" sequence="2" />
+    <menuitem name="Dégradation d'Echelon" id="menu_degradation_echelon_carriere" action="egov_rh_ma.open_module_tree_degradation"  parent="menu_carriere_rh" sequence="3" />
+    <menuitem name="Avancement d'Echelon" id="menu_avancement_echelon" action="egov_rh_ma.open_module_tree_ae"  parent="menu_carriere_rh" sequence="2" />
+    <menuitem name="Reclassement par Examen" id="menu_reclassement_examen" action="egov_rh_ma.open_module_tree_eap"  parent="menu_carriere_rh" sequence="5" />
+    <menuitem name="Reclassement Au choix" id="menu_reclassement_choix" action="egov_rh_ma.open_module_tree_rn"  parent="menu_carriere_rh" sequence="6" />
+    <delete model="ir.ui.menu" id="egov_rh_ma.menu_action_hr_notes"></delete>
+    <delete model="ir.ui.menu" id="egov_rh_ma.menu_hr_degradation_tree"></delete>
+    <delete model="ir.ui.menu" id="egov_rh_ma.menu_hr_ae_tree"></delete>
+    <delete model="ir.ui.menu" id="egov_rh_ma.menu_hr_eap_tree"></delete>
+    <delete model="ir.ui.menu" id="egov_rh_ma.menu_hr_rn_tree"></delete>
+    <delete model="ir.ui.menu" id="egov_rh_ma.menu_hr_carriere"></delete>
+    
+  </data>
+</odoo>
